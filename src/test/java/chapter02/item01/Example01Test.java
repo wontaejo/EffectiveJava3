@@ -6,7 +6,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Example01Test {
     @Test
-    public void test() {
-        assertEquals(1, 1);
+    public void getBenzTest() {
+        Example01 benz1 = Example01.getBenz();
+        Example01 benz2 = Example01.getBenz();
+
+        assertEquals(benz1.hashCode(), benz2.hashCode());
     }
 }
